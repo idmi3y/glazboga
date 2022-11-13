@@ -7,7 +7,7 @@ import requests
 import json
 
 # Telegram bot token
-API_TOKEN = "___TELEGRAM_API_TOKEN___"
+API_TOKEN = "5639984737:AAFqtdWCprI-UQDyI_CrQtAW-VOBmTqOCJs"
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
@@ -19,12 +19,12 @@ dp = Dispatcher(bot)
 print("!BOT STARTED!")
 
 # Message handler that sends greeting when bot started
-@dp.message_handler(commands=['start', 'help'])
+@dp.message_handler(commands=['Начнем ?', 'help'])
 async def send_welcome(message: types.Message):
     """
     This handler will be called when user sends `/start` or `/help` command
     """
-    await message.reply("Probiv Bot Template by DimonDev: @dimondevchat")
+    await message.reply(software by iDmi3y")
 
 
 # This is the main probiv function that returns a json and formats it, then sends it
@@ -43,7 +43,7 @@ async def text(message: types.Message):
         # RapidAPI necessary host header
         "X-RapidAPI-Host": "dimondevosint.p.rapidapi.com",
         # API key that you can get by subscribing to the API
-        "X-RapidAPI-Key": "___RAPIDAPI_API_KEY___"
+        "X-RapidAPI-Key": "9bf697be54msh98172c095cbe4d5p10aa8bjsn050fd23f9d68"
     }
 
     # Send the request with all the parameters and print the result for debugging
@@ -59,12 +59,7 @@ async def text(message: types.Message):
                            👨 ФИО: {data['name']}
                            🏳️ Страна: {data['country']}
                            📱 Оператор: {data['operator']}
-                           📓 Объявления: {data['obyavleniya']}
-
-                           @dimondevchat
-                           
-                           Код бота: https://github.com/SegYT/glazboga/
-                           """)
+                           📓 Объявления: {data['obyavleniya']}"")
 
 
 # Main loop
